@@ -60,7 +60,7 @@ class HoverImgFx1 {
         top: document.body.scrollTop + document.documentElement.scrollTop
       };
       this.DOM.reveal.style.top = `${mousePos.y-220-docScrolls.top}px`;
-      this.DOM.reveal.style.left = `${mousePos.x+1-docScrolls.left}px`;
+      this.DOM.reveal.style.left = `${mousePos.x-100-docScrolls.left}px`;
     };
     this.mouseenterFn = (ev) => {
       this.positionElement(ev);
